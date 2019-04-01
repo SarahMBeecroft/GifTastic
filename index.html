@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,43 @@
     <title>Reaction GIFs Generator</title>
 
     <!-- Link to Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Links to CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
     <!-- Links to jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-   
+
     <!-- Links to JavaScript -->
     <script src="assets/javascript/app.js"></script>
 
 </head>
+
 <body>
-    <jumbotron><h1>Reaction GIF Generator</h1><br><h4>Click GIFs to animate!</h4></jumbotron>
+    <jumbotron>
+        <h1>Reaction GIF Generator</h1><br>
+        <h4>Click GIFs to animate!</h4>
+    </jumbotron>
 
     <!-- Rendered buttons go here -->
     <div id="buttons"></div>
 
+    <br>
+
     <!-- Form for user to add their own button -->
-    <form id="form">
-        <label for="user-input"><h3>Add your own reaction button:</h3></label>
-        <input type="text" id="textbox">
-        <br>
+    <div id="submitform">
+        <form id="add-button"> 
+            <label for="form-input">Add your own button here:</label>
+            <input type="text" class="form-control" id="form-input">
+            <button id="add-topic" type="submit" class="btn">Submit</button>
+        </form>
+    </div>
 
     <!-- Area of generated gifs -->
     <div id="gifs"></div>
 
 </body>
+
 </html>

@@ -43,9 +43,9 @@ $(document).ready(function () {
                 var gif = $("<img>");
 
                 // Pause and play attributes
-                gif.attr("src", results[i].images.original_still.url);
-                gif.attr("data-still", results[i].images.original_still.url);
-                gif.attr("data-animate", results[i].images.original.url);
+                gif.attr("src", results[i].images.fixed_height_still.url);
+                gif.attr("data-still", results[i].images.fixed_height_still.url);
+                gif.attr("data-animate", results[i].images.fixed_height.url);
                 gif.attr("data-state", "still");
                 gif.attr("class", "gif");
 
@@ -81,6 +81,32 @@ $(document).ready(function () {
         };
     };
 
+    // Function for click event when user hits submit button
+    $("#add-topic").on("click", function(event) {
+    event.preventDefault();
+
+    // Takes user's input, trims it, and pushes to array of topics
+    var topic = $("#form-input").val().trim();
+    topics.push(topic);
+
+    // Calls make buttons function to show with all buttons
+    makeButtons();
+});
+
+    // Function to add click event when submit button is clicked
+    $("#submit").on("click", function(event) {
+
+    event.preventDefault();
+
+    // Takes user's input in text box and trims it so there's no white space
+    var topic = $("#userbutton").val().trim();
+
+    // Pushes user's input to array of topics
+    topics.push(topic);
+
+    // Calls make buttons function to show user's submission
+    showButtons();
+    });
 
     // Function to pause and play gifs
     function playGifs() {
