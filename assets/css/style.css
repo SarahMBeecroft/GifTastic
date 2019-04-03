@@ -1,0 +1,39 @@
+body {
+    background-image: url("../../assets/images/memphis-mini.png");
+    font-family: 'Noto Sans', sans-serif;
+}
+
+#gifs {
+    padding-left: 20px;
+}
+
+#header {
+    text-align: center;
+    background: #537f9b;
+    color: white;
+    padding: 20px 0px 20px 0px;
+    font-family: 'Volkhov', serif;
+    border-top: 2px ridge white;
+    border-bottom: 2px ridge white;
+}
+
+form {
+    padding: 20px;
+}
+
+#buttons {
+    padding-left: 20px;
+}
+
+#form-input {
+    width: 300px;
+}
+
+#add-topic {
+    background:#537f9b;
+    border: #537f9b;
+}
+
+#add-topic:hover { 
+    background-color: #71aec5;
+  }

@@ -15,7 +15,7 @@ $(document).ready(function () {
         console.log(topic);
 
         // Query URL for Giphy
-        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=TSAKD90Tb0AsiNIZEV1JwaX38350C95i&q=" + topic + "&limit=10&offset=0&rating=G&lang=en";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=TSAKD90Tb0AsiNIZEV1JwaX38350C95i&q=" + topic + "&limit=10&offset=0&rating=PG&lang=en&randomid";
         console.log(queryURL);
 
         // Ajax call 
@@ -50,7 +50,7 @@ $(document).ready(function () {
                 gif.attr("class", "gif");
 
                 // Appends rating and gif to gif div
-                gifDiv.append(p);
+                gifDiv.append(p).toUpperCase;
                 gifDiv.append(gif);
 
                 // Adds both rating and gif to gif div in HTML
@@ -78,6 +78,7 @@ $(document).ready(function () {
             button.text(topics[i]);
             // Adds buttons to #buttons div
             $("#buttons").append(button, " "); // Extra quotes add space between buttons 
+            $("p").css("background-color");
         };
     };
 

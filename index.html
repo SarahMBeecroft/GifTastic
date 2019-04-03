@@ -14,6 +14,9 @@
     <!-- Links to CSS -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
+    <!-- Links to Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Volkhov" rel="stylesheet">
+
     <!-- Links to jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
@@ -23,10 +26,11 @@
 </head>
 
 <body>
-    <jumbotron>
+    <div id ="header">
         <h1>Reaction GIF Generator</h1><br>
-        <h4>Click GIFs to animate!</h4>
-    </jumbotron>
+        <h4>(Click GIFs to animate!)</h4>
+    </div>
+    <br>
 
     <!-- Rendered buttons go here -->
     <div id="buttons"></div>
@@ -38,7 +42,8 @@
         <form id="add-button"> 
             <label for="form-input">Add your own button here:</label>
             <input type="text" class="form-control" id="form-input">
-            <button id="add-topic" type="submit" class="btn">Submit</button>
+            <br>
+            <button id="add-topic" type="submit" class="btn btn-primary">Submit</button>
         </form>
     </div>
 
