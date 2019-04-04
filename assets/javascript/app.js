@@ -50,8 +50,8 @@ $(document).ready(function () {
                 gif.attr("class", "gif");
 
                 // Appends rating and gif to gif div
-                gifDiv.append(p).toUpperCase;
-                gifDiv.append(gif);
+                gifDiv.append(p);
+                gifDiv.prepend(gif); // Shows rating below gif
 
                 // Adds both rating and gif to gif div in HTML
                 $("#gifs").append(gifDiv);
