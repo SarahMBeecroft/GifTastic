@@ -15,7 +15,7 @@ $(document).ready(function () {
         console.log(topic);
 
         // Query URL for Giphy
-        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=TSAKD90Tb0AsiNIZEV1JwaX38350C95i&q=" + topic + "&limit=10&offset=0&rating=PG&lang=en&randomid";
+        var queryURL = "https://api.giphy.com/v1/gifs/search?api_key=TSAKD90Tb0AsiNIZEV1JwaX38350C95i&q=" + topic + "&limit=20&offset=0&rating=PG&lang=en";
         console.log(queryURL);
 
         // Ajax call 

@@ -1,39 +1,73 @@
 body {
-    background-image: url("../../assets/images/memphis-mini.png");
-    font-family: 'Noto Sans', sans-serif;
+  background-image: url("../../assets/images/memphis-mini.png");
+  font-family: 'Cabin', sans-serif;
+  color: darkslategrey;
+  font-size: 22px;
+}
+
+.container {
+  margin: 20px 0px 0px 20px;
 }
 
 #gifs {
-    padding-left: 20px;
+  padding-left: 20px;
+  align-content: center;
+  text-align: center;
 }
 
 #header {
-    text-align: center;
-    background: #537f9b;
-    color: white;
-    padding: 20px 0px 20px 0px;
-    font-family: 'Volkhov', serif;
-    border-top: 2px ridge white;
-    border-bottom: 2px ridge white;
+  text-align: center;
+  background: #202d49;
+  color: white;
+  padding: 70px 10px 70px 10px;
+  font-family: 'Cabin', sans-serif;
+  border-bottom: 2px ridge white;
+}
+
+h1 {
+    font-size: 54px;
+}
+
+h4 {
+    font-size: 36px;
 }
 
 form {
-    padding: 20px;
+  padding: 20px;
 }
 
 #buttons {
-    padding-left: 20px;
+  padding-left: 20px;
 }
 
 #form-input {
-    width: 300px;
+  width: 300px;
 }
 
 #add-topic {
-    background:#537f9b;
-    border: #537f9b;
+  background: #537f9b;
+  border: #537f9b;
+  font-size: 22px;
 }
 
-#add-topic:hover { 
-    background-color: #71aec5;
+#add-topic:hover {
+  background-color: #71aec5;
+}
+
+.wrapper {
+  padding-top: 50px;
+  height: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  padding: 20px;
+  justify-content: space-around;
+  align-content: flex-start;
+  overflow: auto;
+
+}
+
+.grid-container {
+    display: grid;
+    grid-gap: 2px;  
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }

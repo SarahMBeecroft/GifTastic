@@ -1,55 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Reaction GIFs Generator</title>
 
     <!-- Link to Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
     <!-- Links to CSS -->
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 
     <!-- Links to Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans|Volkhov" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
 
     <!-- Links to jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <!-- Links to JavaScript -->
     <script src="assets/javascript/app.js"></script>
+  </head>
 
-</head>
-
-<body>
-    <div id ="header">
-        <h1>Reaction GIF Generator</h1><br>
-        <h4>(Click GIFs to animate!)</h4>
+  <body>
+    <div id="header">
+      <h1>REACTION GIF GENERATOR</h1>
+      <br />
+      <h4>(Click GIFs to animate!)</h4>
     </div>
-    <br>
+    <br />
 
     <!-- Rendered buttons go here -->
+    <div class="container">
     <div id="buttons"></div>
-
-    <br>
+    <br />
 
     <!-- Form for user to add their own button -->
     <div id="submitform">
-        <form id="add-button"> 
-            <label for="form-input">Add your own button here:</label>
-            <input type="text" class="form-control" id="form-input">
-            <br>
-            <button id="add-topic" type="submit" class="btn btn-primary">Submit</button>
-        </form>
+      <form id="add-button">
+        <label for="form-input">Add your own button here:</label>
+        <input type="text" class="form-control" id="form-input" />
+        <br />
+        <button id="add-topic" type="submit" class="btn btn-primary">
+          Submit
+        </button>
+      </form>
+    </div>
     </div>
 
     <!-- Area of generated gifs -->
-    <div id="gifs"></div>
+    <div class="wrapper">
+      <div id="gifs" class='grid-container'></div>
+    </div>
 
-</body>
-
+  </body>
 </html>
